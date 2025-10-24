@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+main #titulo {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* FORMULÁRIO DE EDIÇÃO */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #0a8383;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-voltar {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.btn-voltar:hover {
+    color: #0a8383;
+}
+
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.container input[type="text"],
+.container input[type="date"],
+.container select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border 0.2s ease;
+    color: #0a8383;
+}
+
+.container input[type="text"]:focus,
+.container input[type="date"]:focus,
+.container select:focus {
+    border: 2px solid #0a8383;
+    outline: none;
+}
+
+/* BOTÃO SALVAR */
+.container button[type="submit"] {
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    background-color: #0a8383;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.container button[type="submit"]:hover {
+    background-color: #0a8383;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+}

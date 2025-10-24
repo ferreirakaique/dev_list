@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+
+main #titulo {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.container_tarefas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tarefa {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px #0a8383;
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarefa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px #003a43;
+}
+
+.status {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.status #status_tarefa {
+    padding: 5px 12px;
+    border: 2px solid #003a43;
+    border-radius: 15px;
+    color: #003a43;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    background-color: #003a43;
+    color: #fff;
+    cursor: pointer;
+}
+
+.status button.marcar_feito {
+    padding: 5px 12px;
+    background-color: #003a43;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.status button.marcar_feito:hover {
+    background-color: #003a43;
+}
+
+.tarefa .titulo_tarefa h1 {
+    font-size: 22px;
+    color: #003a43;
+    margin-bottom: 10px;
+}
+
+.tarefa .descricao_tarefa p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.tarefa .operacoes a {
+    padding: 6px 15px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.2s ease;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tarefa .operacoes a:first-child {
+    background-color: #003a43;
+    color: #fff;
+}
+
+.tarefa .operacoes a:first-child:hover {
+    background-color: #00242a;
+}
+
+.tarefa .operacoes a:last-child {
+    background-color: rgb(255, 44, 44);
+    color: white;
+}
+
+.tarefa .operacoes a:last-child:hover {
+    background-color: rgb(146, 10, 10);
+}

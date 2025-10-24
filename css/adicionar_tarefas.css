@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #0a8383;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* LINK VOLTAR */
+.btn-voltar {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.btn-voltar:hover {
+    color: #0a8383;
+}
+
+
+/* TITULO */
+.container h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* LABEL */
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* INPUTS */
+.container input[type="text"],
+.container input[type="date"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border 0.2s ease;
+}
+
+.container input[type="text"]:focus,
+.container input[type="date"]:focus {
+    border: 2px solid #0a8383;
+    outline: none;
+}
+
+/* BOTÃO */
+.container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 15px;
+    background-color: #0a8383;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.container button:hover {
+    background-color: #003232;
+    transform: translateY(-2px);
+}

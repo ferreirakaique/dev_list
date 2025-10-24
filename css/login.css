@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    height: 100vh;
+    background: linear-gradient(135deg, #0a8383, #003a43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container do formulário */
+form {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    padding: 40px 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+form h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Labels */
+form label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Inputs */
+form input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #003a43;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    background: #fff;
+    box-shadow: 0 0 5px #0a8383;
+}
+
+/* Botão */
+form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background: #0a8383;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background: #026c6c;
+    transform: translateY(-2px);
+}
+
+/* Link para cadastro */
+
+form p {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form a {
+    text-decoration: none;
+    color: #9dffff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+form a:hover {
+    color: #c7f7f7;
+}
+
+/* Ícones opcionais */
+form i {
+    margin-right: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    form {
+        width: 85%;
+        padding: 30px 20px;
+    }
+
+    form h1 {
+        font-size: 26px;
+    }
+}
